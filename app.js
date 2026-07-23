@@ -25,7 +25,8 @@ const createScene = async function () {
             scene
         );
 
-    const splat = new BABYLON.GaussianSplattingMesh("splat", null, scene);
+    BABYLON.MeshBuilder.CreateBox("box", {}, scene);
+    //const splat = new BABYLON.GaussianSplattingMesh("splat", null, scene);
     await splat.loadFileAsync("./vrlab densed 1m.spz");
     await scene.createDefaultXRExperienceAsync({
         uiOptions: {

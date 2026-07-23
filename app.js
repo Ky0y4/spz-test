@@ -26,7 +26,7 @@ const createScene = async function () {
         );
 
     const splat = new BABYLON.GaussianSplattingMesh("splat", null, scene);
-    await splat.loadFileAsync("./vrlab densed 1m.spz");
+    await splat.loadFileAsync("./vrlabdensedreduced.sog");
     await scene.createDefaultXRExperienceAsync({
         uiOptions: {
             sessionMode: "immersive-ar"
